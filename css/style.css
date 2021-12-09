@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+body * {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1613310023042-ad79320c00ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") bottom/cover;
+  box-shadow: inset 0px 100vh 0px rgba(0, 0, 0, 0.6);
+}
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 20px 0px;
+  background-color: #2f2f2f;
+}
+header ul li a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 500ms;
+}
+header ul li a:hover {
+  color: #d1d1d1;
+  text-shadow: 0px 0px 10px #c8c8c8;
+}
+
+main .btn {
+  padding: 15px 20px;
+  background-color: #f64e21;
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+main .card {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+  flex-wrap: wrap;
+}
+main .card div {
+  width: 220px;
+  margin: 0px 20px;
+  margin-bottom: 40px;
+  background-color: #e8e8e8;
+  text-align: center;
+  padding: 20px;
+}
+main .card div img {
+  width: 25%;
+}
+main .card div h3 {
+  margin: 15px 0px;
+}
+main .scene {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  background-color: #050e1b;
+}
+main .scene div {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  color: white;
+}
+main .scene div p {
+  margin: 40px 0px;
+}
+main .goods {
+  text-align: center;
+  padding: 50px;
+}
+main .goods h1 {
+  font-size: 45px;
+  position: relative;
+}
+main .goods h1::before {
+  content: "";
+  width: 150px;
+  border: 2px solid #dd8800;
+  background-color: #dd8800;
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+}
+main .goods p {
+  font-size: 20px;
+  width: 40%;
+  margin: 30px auto;
+}
+main .goods section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .goods section img {
+  width: 25%;
+  height: 200px;
+}
+main .skills {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+main .skills div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  background-color: #e8e8e8;
+  margin: 10px;
+}
+main .skills div:nth-child(1) img {
+  width: 180px;
+  border-radius: 50%;
+}
+main .skills div:nth-child(2) {
+  background-color: #e8e8e8;
+  padding: 20px;
+  margin: 10px;
+}
+main .skills div:nth-child(2) p {
+  margin: 20px 0px;
+}
+main .skills div:nth-child(2) div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  position: relative;
+  overflow: hidden;
+}
+main .skills div:nth-child(2) div h3 {
+  font-weight: 400;
+}
+main .skills div:nth-child(2) div::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+main .skills div:nth-child(2) div::after {
+  content: "";
+  width: 80%;
+  height: 4px;
+  background-color: #dd8800;
+  position: absolute;
+  bottom: 0px;
+  left: -100%;
+  transition: 500ms;
+}
+main .skills div:nth-child(2) div:hover:after {
+  left: 0px;
+}
+main .desc h1 {
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+}
+main .desc h1::before {
+  content: "";
+  width: 150px;
+  border: 2px solid #dd8800;
+  background-color: #dd8800;
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+}
+main .desc .p {
+  margin: 30px auto;
+  text-align: center;
+  width: 40%;
+}
+main .desc .descCard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .desc .descCard div {
+  width: 350px;
+  height: 400px;
+  margin: 0px 20px;
+  margin-bottom: 40px;
+  background-color: #e8e8e8;
+  text-align: center;
+}
+main .desc .descCard div:nth-child(2) img {
+  height: 250px;
+}
+main .desc .descCard div img {
+  width: 100%;
+}
+main .desc .descCard div h2 {
+  margin: 5px;
+}
+main .desc .descCard div p {
+  margin: 5px;
+  font-size: 15px;
+}
+main .mainPrice {
+  background-color: #171e20;
+  color: white;
+  padding-bottom: 50px;
+}
+main .mainPrice h1 {
+  text-align: center;
+  padding: 50px 0px 10px 0px;
+  position: relative;
+}
+main .mainPrice h1::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  border: none;
+  background-color: #1d2326;
+  position: absolute;
+  bottom: 0px;
+  left: 47%;
+  margin-top: 30px;
+}
+main .mainPrice .clPrice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .mainPrice .clPrice .price {
+  height: 300px;
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+  margin-top: 50px;
+  margin: 50px 0px 10px 7px;
+  background-color: #1d2326;
+}
+main .mainPrice .clPrice .price:nth-child(2) span {
+  color: red;
+}
+main .mainPrice .clPrice .price:hover {
+  border: 2px solid red;
+}
+main .mainPrice .clPrice .price h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+main .mainPrice .clPrice .price h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .mainPrice .clPrice .price div {
+  padding-top: 50px;
+}
+main .mainPrice .clPrice .price div p {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+main .mainPrice .clPrice .price div p span {
+  font-weight: 600;
+}
+main .send {
+  text-align: center;
+  padding-top: 50px;
+}
+main .send h1 {
+  position: relative;
+}
+main .send h1::before {
+  content: "";
+  width: 150px;
+  height: 2px;
+  background-color: #dd8800;
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+}
+main .send p {
+  padding-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+main .send input {
+  width: 40%;
+  height: 90px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+}
+main .send textarea {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 80%;
+  height: 90px;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-size: 15px;
+}
+main .map {
+  margin-top: 50px;
+}
+
+footer {
+  padding-top: 30px;
+  text-align: center;
+  background-color: #171e20;
+  color: white;
+}
+footer h1 {
+  font-size: 18px;
+}
+footer p {
+  font-size: 13px;
+  padding-top: 10px;
+}
+footer .fab {
+  margin-top: 10px;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+@media (max-width: 1250px) {
+  main .goods section {
+    margin-top: 15px;
+  }
+  main .goods p {
+    display: none;
+  }
+  main .btn {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 930px) {
+  main .goods section img {
+    width: 33.3333333333%;
+  }
+  main .skills div:nth-child(1) img {
+    width: 150px;
+  }
+}
+@media (max-width: 700px) {
+  main .goods section img {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  main .goods section img {
+    width: 100%;
+  }
+  main .desc h1 {
+    font-size: 25px;
+  }
+  main .desc p {
+    font-size: 12px;
+  }
+  main .desc .descCard div h2 {
+    font-size: 20px;
+  }
+  main .desc .descCard div p {
+    padding-top: 20px;
+    font-size: 10px;
+  }
+  main .skills div:nth-child(2) p {
+    font-size: 13px;
+  }
+  main .skills div:nth-child(2) div h3 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  main .skills div:nth-child(2) h1 {
+    font-size: 13px;
+  }
+  main .skills div:nth-child(2) p {
+    font-size: 10px;
+  }
+  main .skills div:nth-child(2) div h3 {
+    font-size: 10px;
+  }
+  main .goods h1 {
+    font-size: 14px;
+  }
+  main .goods h1::before {
+    display: none;
+  }
+  main .desc h1::before {
+    display: none;
+  }
+  main .send h1 {
+    font-size: 13px;
+  }
+  main .send h1::before {
+    display: none;
+  }
+  main .send p {
+    font-size: 13px;
+  }
+  main .send input {
+    font-size: 10px;
+  }
+  main .send textarea {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
